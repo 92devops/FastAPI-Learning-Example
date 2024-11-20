@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<div class="row" style="padding-top: 100px">
+    <div class="col-md-2 col-md-offset-4">
+      <form action="/upload/" method="post"  enctype="multipart/form-data">
+          <div class="form-group" >
+            <label for="exampleInputUser">用户名</label>
+            <input type="text" class="form-control" id="exampleInputUser" name="username" placeholder="admin"  multiple>
+          </div>
+
+
+
+          <div class="form-group">
+            <label for="exampleInputFile">File input</label>
+            <input type="file" id="exampleInputFile" name="file" multiple>
+            <p class="help-block">Example block-level help text here.</p>
+          </div>
+
+          <button type="submit" class="btn btn-info">登陆</button>
+        </form>
+    </div>
+
+</div>
+{% endblock %}
